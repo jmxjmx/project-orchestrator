@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["results", "comparison"],
+  "properties": {
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["assertion", "with_skill", "without_skill"],
+        "properties": {
+          "assertion": { "type": "string" },
+          "with_skill": { "$ref": "#/$defs/result" },
+          "without_skill": { "$ref": "#/$defs/result" }
+        }
+      }
+    },
+    "comparison": { "type": "string" }
+  },
+  "$defs": {
+    "result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pass", "evidence"],
+      "properties": {
+        "pass": { "type": "boolean" },
+        "evidence": { "type": "string" }
+      }
+    }
+  }
+}

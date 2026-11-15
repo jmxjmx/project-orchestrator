@@ -1,0 +1,39 @@
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+auth.json
+**/auth.json
+config.toml
+**/config.toml
+**/codex-home/
+*.secret
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+
+# Python validation tools
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# Optional Node tooling
+node_modules/
+
+# Evaluation workspaces and logs
+evals/workspaces/
+evals/output/
+evals/results/
+*-workspace/
+*.jsonl
+*.log
+

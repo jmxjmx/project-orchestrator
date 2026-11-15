@@ -1,0 +1,7 @@
+{
+  "name": "login-crash-fixture",
+  "private": true,
+  "scripts": {
+    "test": "node test-login.js"
+  }
+}

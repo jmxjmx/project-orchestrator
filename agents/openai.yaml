@@ -1,0 +1,5 @@
+interface:
+  display_name: "项目总编"
+  short_description: "按任务类型与风险编排需求规格、实施计划、独立评审和交付验证"
+  default_prompt: "使用 $project-orchestrator 澄清这个项目，并按风险选择合适流程，先不要修改文件。"
+

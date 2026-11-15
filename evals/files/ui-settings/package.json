@@ -1,0 +1,8 @@
+{
+  "name": "settings-ui-fixture",
+  "private": true,
+  "scripts": {
+    "test": "node settings.test.js",
+    "start": "node server.js"
+  }
+}
