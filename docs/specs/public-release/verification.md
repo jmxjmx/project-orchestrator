@@ -1,6 +1,6 @@
 # 公开版验证记录
 
-状态：`partial`
+状态：`verified`
 
 检查日期：2026-11-15
 
@@ -16,14 +16,20 @@
 | 结构安全 | 常见 Token、私钥和邮箱模式检索 | 无命中 | 检索退出码 0 | 通过 |
 | JavaScript | `node --check` 检查评测脚本 | 4 个文件语法通过 | 命令退出码 0 | 通过 |
 | 源目录隔离 | 检查源仓库状态 | 工作区干净且未修改 | 源仓库 `git status` | 通过 |
+| AC-005 | 检查 GitHub 仓库和远端分支 | 公共仓库，默认分支为 `main` | [jmxjmx/project-orchestrator](https://github.com/jmxjmx/project-orchestrator) | 通过 |
+| AC-005 | 对比本地与远端提交 | 哈希一致 | `99019d1451ba410629d3a95b0cf4559e9369a46e` | 通过 |
 
 ## 尚未执行
 
-- 尚未创建 GitHub 仓库、配置远程、提交或推送。
 - 尚未使用独立外部密钥扫描器或 GitHub 仓库 Secret Scanning。
-- README 中的安装地址已指向当前发布账号。
 
 ## 剩余风险
 
 - 公开上传后仍应检查 GitHub 提交作者、仓库可见性和 Secret Scanning 结果。
 - 评测样本仅可用于隔离环境，不应加入真实凭据、生产连接或个人目录。
+
+## 发布证据
+
+- 仓库：<https://github.com/jmxjmx/project-orchestrator>
+- 首个公开提交：`99019d1451ba410629d3a95b0cf4559e9369a46e`
+- 提交身份：`jmxjmx <jmxjmx@users.noreply.github.com>`
